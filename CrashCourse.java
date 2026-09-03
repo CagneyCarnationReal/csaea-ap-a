@@ -50,17 +50,25 @@ public class CrashCourse {    //class header
         // logical operators
         // NOT: !    AND:  &&   OR: ||
 
-        boolean e = false; boolean f = true;
+        boolean f = false; boolean t = true;
 
         //predict
-        System.out.println(!e); //True
-        System.out.println(e && f); //False
-        System.out.println(e || f); //True
-        System.out.println(e || f && !e); //True
+        System.out.println(!f); //True
+        System.out.println(f && t); //False
+        System.out.println(f || t); //True
+        System.out.println(f || t && !f); //True
 
-        System.out.println(e && f); // short circusts after checking e
+        System.out.println(f && t); // short circusts after checking f
+        System.out.println(t || (f && t)); // short circuts after checking the first t
+        
+        // Casting (converting)
+        int g = (int)5.5; 
+        System.out.println(g);
+        double h = (double)5/6;
+         System.out.println(h);
 
-
+    
+         
     }
 
 }
