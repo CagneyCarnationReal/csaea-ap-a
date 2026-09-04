@@ -1,3 +1,6 @@
+
+import java.util.ArrayList;
+
 public class CrashCourse {    //class header
     
     public static void main(String[] args) {
@@ -97,6 +100,32 @@ public class CrashCourse {    //class header
         // 0 0 0
 
         System.out.println("rows: " + arrygrid1.length + "\n" + "collums: " + arrygrid1[0].length);
+
+        int[][] arrygrid2 = { {7,8,9},
+                              {4,5,6},
+                              {1,2,3} };
+
+        System.out.println(arrygrid2[0][1]); // print 8 in the grid
+        System.out.println(arrygrid2[2][2]); // print 3 in the grid
+
+        //Arraylist
+        //any size, built in fuctions
+        //avoid primitive data types. specia classesfor Intrgrt,Double,Boolean, String (wrapper classes)
+
+        ArrayList<String> arrylst = new ArrayList<>();
+
+        arrylst.add("BBQ");
+        arrylst.add("Bacon");
+        arrylst.add("Burger");
+        arrylst.remove(0);
+        arrylst.add(0, "Big");
+        arrylst.set(1, "fat");
+        
+        System.out.println(arrylst);
+        System.out.println(arrylst.size());
+        System.out.println(arrylst.get(2));
+
+
 
 
     }
