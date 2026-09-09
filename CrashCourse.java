@@ -19,6 +19,7 @@ public class CrashCourse {    //class header
         //Varibles
 
         //Primitive Variables
+        
         int a; //integer
         double b; // decimal/float
         boolean c; //true or false
@@ -38,6 +39,7 @@ public class CrashCourse {    //class header
 
         // incremend and decements by 1
         // --  ++
+       
         d--;
         d++;
         d++;
@@ -56,6 +58,7 @@ public class CrashCourse {    //class header
         boolean f = false; boolean t = true;
 
         //predict
+        
         System.out.println(!f); //True
         System.out.println(f && t); //False
         System.out.println(f || t); //True
@@ -65,12 +68,14 @@ public class CrashCourse {    //class header
         System.out.println(t || (f && t)); // short circuts after checking the first t
         
         // Casting (converting)
+        
         int g = (int)5.5; 
         System.out.println(g);
         double h = (double)5/6;
          System.out.println(h);
 
         // Strings
+       
         String s1 = "Goodnight";
         String s2 = " and ";
         String s3 = "Goodbye";
@@ -109,7 +114,9 @@ public class CrashCourse {    //class header
         System.out.println(arrygrid2[2][2]); // print 3 in the grid
 
         //Arraylist
+       
         //any size, built in fuctions
+       
         //avoid primitive data types. specia classesfor Intrgrt,Double,Boolean, String (wrapper classes)
 
         ArrayList<String> arrylst = new ArrayList<>();
@@ -125,10 +132,83 @@ public class CrashCourse {    //class header
         System.out.println(arrylst.size());
         System.out.println(arrylst.get(2));
 
+        // Math class
+        Math.max(6,7);// returns 7
+        Math.min(6,9);//returns 6
+        Math.sqrt(9); // returns 3
+        Math.abs(-1); // returns 1
+
+        // conditionals
+
+        //if, else if, else
+
+        boolean tur = true;
+        boolean falsity = false;
+
+        if(falsity) {
+            System.out.println("reached first condition");
+        } else if(!falsity){
+            System.out.println("reached second condition");
+        }
+        else{
+            System.out.println("reached else");
+        }
+
+        // ITERATION
+
+        // while loop
+
+        int x = 5; 
+
+        while(x < 10){
+            System.out.print(x + " ");
+            x++;
+        }
+
+        System.out.println();
+        System.out.println();
+
+        // for loop
+        //intiallize varible for index
+        //conditional
+        //increment , decrement
+
+        for(int i = 0; i > 5; i++){
+            System.out.println(i);
+        }
+
+        // enhanced for loop (only for reading values)
+
+        ArrayList<String> animals = new ArrayList<>();
+        animals.add("Sheep");  
+        animals.add("Deer");
+        animals.add("Moose");     
+
+        for(String s : animals){
+            System.out.println("We saw a " + s);
+        }
+
+        //printing arrays using loops
+    
+          double[] arry = {6.7, 6.9, 1.4 , 8.9};
+
+        for (int i = 0; i < arry.length; i++){
+            System.out.println(arry[i]);
+        }
+
+        //printing 2d arrays using loops
+
+        int[][] arrymatrix = { {67,1,9},{21,2,6},{69,3,16}, };
+
+        for(int row = 0; row < arrymatrix.length;row ++){
+            for (int col = 0; col < arrymatrix[row].length;col ++){
+                System.out.print(arrymatrix[row][col] + " ");
+            }
+            System.out.println();
+        }
 
 
 
     }
-
 
 }
