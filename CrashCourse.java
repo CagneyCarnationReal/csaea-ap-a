@@ -205,6 +205,7 @@ public class CrashCourse {    //class header
                 System.out.print(arrymatrix[row][col] + " ");
             }
             System.out.println();
+
         }
 
 
