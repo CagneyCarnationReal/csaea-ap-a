@@ -47,7 +47,7 @@ public class Knight {
     public void takeDamage(int amount){
         health -= amount;
         if (health < 0){
-            System.out.printLn("you died.");
+            System.out.println("you died.");
         }
     }
 
