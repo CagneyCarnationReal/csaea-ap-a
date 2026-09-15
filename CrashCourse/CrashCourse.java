@@ -149,7 +149,8 @@ public class CrashCourse {    //class header
 
         if(falsity) {
             System.out.println("reached first condition");
-        } else if(!falsity){
+        } 
+        else if(!falsity){
             System.out.println("reached second condition");
         }
         else{

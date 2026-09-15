@@ -27,8 +27,37 @@ public JohnDungeon(String characterName , int health , int gold){
 
 }
 
+public void rest(){
+    if (stamina > 90){
+        stamina = 100;
+    }
+    else{
+        stamina = stamina + 10;
+    }
+    System.out.println("you sucsessfully rested");
+}
 
+public void shop(){
+    if (gold > 10){
+        gold = gold;
+        System.out.println("your too broke");
+    }
+    else{
+        gold = gold - 10;
+        System.out.println("you purchased a sword");
+    }
+}
 
+public void study(){
+    magicPower = magicPower + 1;
+}
 
+public void train(){
+    strength = strength + 1;
+}
+
+public void stretch(){
+    dexterity = dexterity + 1;
+}
 
 }
