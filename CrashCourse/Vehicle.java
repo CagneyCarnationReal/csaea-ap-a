@@ -100,7 +100,17 @@ public class Vehicle {
 
     }
 
+    public void checkDash(){
 
+        if (hasEngine = true){
+            System.out.println("you have" + gasoline + " Gallons of gas.");
+        }
+        else if (hasEngine = false){
 
+            System.out.println("you're check engine light is on");
+
+        }
+
+    }
 
 }
