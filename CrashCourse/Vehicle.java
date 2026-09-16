@@ -41,27 +41,66 @@ public class Vehicle {
 
     public void travel(int speed){
 
-        if(speed <= 25){
-
+        if (gasoline > 0.1){
         
+            if(speed <= 25){
+
+                gasoline -= .4;
+                System.out.print("You went one mile, you now have " + gasoline);
+        
+            }
+        
+            else if(speed <= 45){
+
+                gasoline -= .3;
+                System.out.print("You went one mile, you now have " + gasoline);
+
+            }
+        
+            else if(speed <= 65){
+
+                gasoline -= .2;
+                System.out.print("You went one mile, you now have " + gasoline);
+        
+            }
+        
+            else if(speed <= 85){
+
+                gasoline -= .1;
+                System.out.print("You went one mile, you now have " + gasoline);
+
+            }
 
         }
-        else if(speed <= 45){
-
-
-
+        else{
+            System.out.println("you're to low on gas");
         }
-        else if(speed <= 65){
+    }
 
+    public void breakdown(){
 
+        hasEngine = false;
 
+    }
+
+    public void repairEngine(){
+    
+        if(hasEngine = false){
+            hasEngine = true;
         }
-        else if(speed <= 85){
-
-
-
+        else{
+            System.out.println("you have a working engine");
         }
 
     }
+
+    public void fillgas(){
+    
+        gasoline = 35.5;
+
+    }
+
+
+
 
 }
