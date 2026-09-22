@@ -1,4 +1,4 @@
-package CrashCourse;
+//package CrashCourse;
 
 public class Vehicle {
     
@@ -30,63 +30,71 @@ public class Vehicle {
     public void geton(){
 
         passengers += 1;
-
+        System.out.println("you have " + passengers + " Passengers");
     }
 
     public void getoff(){
 
         passengers -= 1;
+        System.out.println("you have " + passengers + " Passengers");
 
     }
 
     public void travel(int speed){
 
-        if (gasoline > 0.1){
+        if (hasEngine = true){
+      
+            if (gasoline > 0.1){
         
-            if(speed <= 25){
+          
+                if(speed <= 25){
 
-                gasoline -= .4;
-                System.out.print("You went one mile, you now have " + gasoline);
+                    gasoline -= .4;
+                    System.out.print("You went one mile, you now have " + gasoline);
         
+                }
+        
+                else if(speed <= 45){
+                    gasoline -= .3;
+                    System.out.print("You went one mile, you now have " + gasoline);
+
+                }
+        
+                else if(speed <= 65){
+
+                    gasoline -= .2;
+                    System.out.print("You went one mile, you now have " + gasoline);
+        
+                }
+        
+                    else if(speed <= 85){
+
+                    gasoline -= .1;
+                    System.out.print("You went one mile, you now have " + gasoline);
+
+                }
+
             }
-        
-            else if(speed <= 45){
-
-                gasoline -= .3;
-                System.out.print("You went one mile, you now have " + gasoline);
-
+            else{
+            System.out.println("you're to low on gas");
             }
-        
-            else if(speed <= 65){
-
-                gasoline -= .2;
-                System.out.print("You went one mile, you now have " + gasoline);
-        
-            }
-        
-            else if(speed <= 85){
-
-                gasoline -= .1;
-                System.out.print("You went one mile, you now have " + gasoline);
-
-            }
-
         }
         else{
-            System.out.println("you're to low on gas");
+            System.out.println("you dont have an engine");
         }
     }
 
     public void breakdown(){
 
         hasEngine = false;
-
+        System.out.println("your engine just broke"); 
     }
 
     public void repairEngine(){
     
         if(hasEngine = false){
             hasEngine = true;
+            System.out.println("you repaired your engine");
         }
         else{
             System.out.println("you have a working engine");
@@ -97,14 +105,15 @@ public class Vehicle {
     public void fillgas(){
     
         gasoline = 35.5;
+        System.out.println("you're full on gas");
 
     }
 
     public void checkDash(){
 
         if (hasEngine = true){
-            System.out.println("you have" + gasoline + " Gallons of gas.");
-        }
+            System.out.println("you have " + gasoline + " Gallons of gas.");
+        } 
         else if (hasEngine = false){
 
             System.out.println("you're check engine light is on");
