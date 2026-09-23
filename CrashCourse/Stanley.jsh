@@ -1,0 +1,166 @@
+import module java.base;
+open Vehicle.java;
+open Vehicle;
+public class Vehicle {
+    
+    private String vehicleName;
+    private String manufacturer;
+    private int wheelNum;
+    private String vehicleColor;
+    private int passengers;
+    private int modelYear;
+    private boolean hasEngine;
+    private double gasoline;
+    private double batteryCharge;
+
+    public Vehicle(String vehicleName , int passengers , boolean hasEngine){
+
+        this.vehicleName = vehicleName;
+        this.passengers = passengers;
+        this.hasEngine = hasEngine;
+
+        manufacturer = "Cheverolet";
+        wheelNum = 4;
+        vehicleColor = "Canary Yellow";
+        modelYear = 1986;
+        gasoline  = 35.5; // 35.5 gallon tank
+        batteryCharge = 87.6; // out of 100%
+
+    }
+
+    public void geton(){
+
+        passengers += 1;
+        System.out.println("you have " + passengers + " Passengers");
+    }
+
+    public void getoff(){
+
+        passengers -= 1;
+        System.out.println("you have " + passengers + " Passengers");
+
+    }
+
+    public void travel(int speed){
+
+        if (hasEngine = true){
+      
+            if (gasoline > 0.1){
+        
+          
+                if(speed <= 25){
+
+                    gasoline -= .4;
+                    System.out.print("You went one mile, you now have " + gasoline);
+        
+                }
+        
+                else if(speed <= 45){
+                    gasoline -= .3;
+                    System.out.print("You went one mile, you now have " + gasoline);
+
+                }
+        
+                else if(speed <= 65){
+
+                    gasoline -= .2;
+                    System.out.print("You went one mile, you now have " + gasoline);
+        
+                }
+        
+                    else if(speed <= 85){
+
+                    gasoline -= .1;
+                    System.out.print("You went one mile, you now have " + gasoline);
+
+                }
+
+            }
+            else{
+            System.out.println("you're to low on gas");
+            }
+        }
+        else{
+            System.out.println("you dont have an engine");
+        }
+    }
+
+    public void breakdown(){
+
+        hasEngine = false;
+        System.out.println("your engine just broke"); 
+    }
+
+    public void repairEngine(){
+    
+        if(hasEngine = false){
+            hasEngine = true;
+            System.out.println("you repaired your engine");
+        }
+        else{
+            System.out.println("you have a working engine");
+        }
+
+    }
+
+    public void fillgas(){
+    
+        gasoline = 35.5;
+        System.out.println("you're full on gas");
+
+    }
+
+    public void checkDash(){
+
+        if (hasEngine = true){
+            System.out.println("you have " + gasoline + " Gallons of gas.");
+        } 
+        else if (hasEngine = false){
+
+            System.out.println("you're check engine light is on");
+
+        }
+
+    }
+
+}
+Vehicle Camero = new Vehicle("Camero", 2 , true);
+Camero.geton()
+Camero.getoff()
+Camero.travel(30)
+Camero.breakdown()
+Camero.repairEngine()
+Camero.fillgas()
+Camero.checkDash()
+Vehicle Truck = new Vehicle("Silverado", 1 , true);
+Truck.geton()
+Truck.getoff()
+Truck.travel(90)
+Truck.breakdown()
+Truck.repairEngine()
+Truck.fillgas()
+Truck.checkDash()
+Vehicle Van = new Vehicle("Tahoe", 5 , true);
+Van.geton()
+Van.getoff()
+Van.travel(50)
+Van.breakdown()
+Van.repairEngine()
+Van.fillgas()
+Van.checkDash()
+Vehicle car = new Vehicle("Focus", 2 , true);
+car.geton()
+car.getoff()
+car.travel(30)
+car.breakdown()
+car.repairEngine()
+car.fillgas()
+car.checkDash()
+Vehicle Bike = new Vehicle("Bike", 1 , false);
+Bike.geton()
+Bike.getoff()
+Bike.travel(10)
+Bike.breakdown()
+Bike.repairEngine()
+Bike.fillgas()
+Bike.checkDash()
