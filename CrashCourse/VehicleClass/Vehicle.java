@@ -1,3 +1,4 @@
+package VehicleClass;
 //package CrashCourse;
 
 public class Vehicle {

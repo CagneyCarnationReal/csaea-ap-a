@@ -1,3 +1,4 @@
+package VehicleClass;
 public class VehicleTester {
     
     public static void main(String[] args){
