@@ -25,6 +25,9 @@ public class EmailTester {
         System.out.println(john.getFirstName());
         System.out.println(bill.changeDomain("hcvsd.org"));
         System.out.println(john.changeDomain("gmail.com"));
+        System.out.println(bill.getLabel());
+        System.out.println(john.getLabel());
+        System.out.println(bill.isStaffFormat());
 
     }
 }

@@ -2,7 +2,7 @@ package FundementalLesseons.Mehtods.IndexOf;
 
 public class Email {
     
-    String address;
+    private String address;
 
     public Email(String address){
 
@@ -45,26 +45,39 @@ public class Email {
 
     public String getLabel(){
         
-        if (this.isSchool() = true){
-            String x = "School";
+
+        boolean x = true;
+       
+        if (x == isSchool()){
+            return  "School";
         }
         else{
-            String x = "Personal";
+            return "Personal";
         }
-        return x;
+       
+    }
+
+    public boolean isStaffFormat(){//go back to bolean after test
+
+        String d = toString().substring(toString().indexOf("@") + 1);
+        String user = toString().substring(0, toString().indexOf("@"));
+       
+        if (d == "hcvsd.org"){
+            boolean x = true;
+        }
+        else{
+            return false;
+        }
+        
+
+        
+
+
+
     }
 
 
 
-
-//Challenge 3
-    // Method name: getLabel
-// Label the address as "School" or "Personal", followed by the domain.
-//     "ana.lee@hcvsd.org" -> "School: hcvsd.org"
-//     "ana99@gmail.com"   -> "Personal: gmail.com"
-// Hint: isSchool() already returns true or false, so use it as your condition.
-// Hint: every path through the method needs a return.
-// Tools: if/else, isSchool, getDomain
 
 // ===== CHALLENGE 4 =====
 // Method name: isStaffFormat
