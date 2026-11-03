@@ -64,6 +64,7 @@ public class Email {
        
         if (d == "hcvsd.org"){
             boolean x = true;
+            return true; //remove
         }
         else{
             return false;
