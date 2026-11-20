@@ -11,6 +11,12 @@ public class ArrayListTester {
 
         int index = ArrayLists.findIndex(animals, "blobfish");
         System.out.println(index);
+
+        ArrayLists.modifyAnimals(animals);
+
+        ArrayLists.replaceAll(animals, "camel", "dog");
+
+        ArrayLists.numberUtlilities();
     }
 
 }
