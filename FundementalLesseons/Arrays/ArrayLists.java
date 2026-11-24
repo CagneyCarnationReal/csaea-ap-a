@@ -96,6 +96,7 @@ public class ArrayLists {
 
     public static void maxIndex(){
 
+        
         int[] values1 = {8,7,4,2,1,0,9};
     
         int highest = values1[0];
