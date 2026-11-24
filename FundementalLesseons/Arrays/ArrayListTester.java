@@ -17,6 +17,16 @@ public class ArrayListTester {
         ArrayLists.replaceAll(animals, "camel", "dog");
 
         ArrayLists.numberUtlilities();
+
+        //ArrayLists.membershipCheck(animals);
+        ArrayLists.copyList();
+
+        ArrayLists.removeShortNames(animals);
+        ArrayLists.removeAll(animals, "blobfish");
+
+        ArrayLists.longNames(animals);
+        
     }
+
 
 }
